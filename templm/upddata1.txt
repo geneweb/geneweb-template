@@ -9,8 +9,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css"%/>
   <meta name="robots" content="none"%/>
   <link rel="shortcut icon" href="%image_prefix;/favicon_gwd.png"%/>
-  %include.css;
-  %base_header;
+  %include;css
+  %include;hed
   <script type="text/javascript">
   <!--
 
@@ -59,7 +59,7 @@
                 %end;
                 +"<input type=\"submit\" value=\"ok\"\/>"
                 %if;(bvar.hide_advanced_request != "yes" and evar.data = "occu")
-                  +"<a href=\"javascript:lhr()\"> [*advanced request] <\/a>"
+                  +"<a href=\"javascript:lhr()\"> [*advanced request]0 <\/a>"
                 %end;
                 +"<\/span>";
       x2.insertAdjacentHTML("AfterEnd",x5);
@@ -75,7 +75,7 @@
 
 %define;print_short()
   <p>[*select a letter] :</p>
-  <p class="list_ini">
+  <p>
     %foreach;initial;
       <a href="%prefix;m=MOD_DATA;data=%evar.data;;s=%encode.ini;">%html_encode.ini;</a>
     %end;
@@ -148,8 +148,8 @@
 %else;
   %apply;print_long()
 %end;
-%base_trailer;
-%include.copyr;
+%include;trl
+%include;copyr
 
 </body>
 </html>

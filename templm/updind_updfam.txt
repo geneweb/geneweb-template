@@ -1,5 +1,5 @@
 <!-- $Id: updind_updfam.txt,v 7.00 2016/03/21 15:24:07 a2 mr Exp $ -->
-%import;js_perso_accesskey
+%include;js_perso_accesskey
 %(updind and updfam %)
 %let;ak1;[*link] [any individual in the base] [with][:]
            [number] occurence (oc=), [first name/first names]0, [surname/surnames]0
@@ -183,9 +183,9 @@
   <!--
     var g_prefix = "%prefix;";
     %apply;g_oku("fn",bvar.uppercase,"tUC1")
-    %apply;g_oku("occu","no","")
-    %apply;g_oku("place","no","")
     %apply;g_oku("sn",bvar.uppercase,"tUC")
+    %apply;g_oku("place","no","")
+    %apply;g_oku("occu","no","")
     %apply;g_oku("src","no","")
   -->
 </script>
